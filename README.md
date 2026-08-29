@@ -1,3 +1,6 @@
+## API Preview
+![API Docs](docs-screenshot.png)
+
 # GitHub Profile Analyzer API
 
 A FastAPI-based REST API that analyzes any GitHub user's public profile and returns meaningful stats.
