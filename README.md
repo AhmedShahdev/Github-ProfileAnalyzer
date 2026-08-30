@@ -26,11 +26,19 @@ uvicorn main:app --reload
 ```
 API runs on `http://localhost:8000`
 
-## Endpoints
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | /analyze/{username} | Analyze any GitHub profile |
-| GET | /docs | Interactive Swagger UI |
+## API Endpoints
+| Method | Endpoint | Auth | Description |
+|--------|----------|------|-------------|
+| GET | /analyze/{username} | API Key | Analyze GitHub profile |
+| GET | /history | No | Last 10 searches |
+| GET | /stats | No | Most searched profiles |
+| GET | /docs | No | Interactive Swagger UI |
+
+## Authentication
+Protected endpoints require `x-api-key` header:
+```
+x-api-key: your-api-key
+```
 
 ## Example
 ```
