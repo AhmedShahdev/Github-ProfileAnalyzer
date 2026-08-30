@@ -31,7 +31,7 @@ def analyze_repos(repos: list):
         if lang:
             languages[lang] = languages.get(lang, 0) + 1
     
-    top_languages = sorted(languages, key=lambda x: languages[x], reverse=True)[:5]
+    top_languages = sorted(languages, key=lambda x: languages[x], reverse=True)[:8]
 
     most_starred = max(repos, key=lambda r: r.get("stargazers_count", 0))
 
